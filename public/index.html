@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+<!-- En la sección <head> de tu index.html -->
+<script>
+  // Si el usuario entra a /tmdb-movies/ sin hash, redirigimos a /tmdb-movies/#/
+  if (window.location.pathname === '/tmdb-movies/') {
+    window.location.replace('/tmdb-movies/#/');
+  }
+</script>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
