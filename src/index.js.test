@@ -1,0 +1,17 @@
+// src/index.js
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import TestApp from "./TestApp";  // Importamos nuestro componente de prueba
+import reportWebVitals from "./reportWebVitals";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <TestApp />
+  </React.StrictMode>
+);
+
+// Si quieres medir el rendimiento, descomenta la siguiente línea:
+// reportWebVitals(console.log);
+reportWebVitals();
